@@ -1,3 +1,4 @@
+// Nível 1 - A jornada do(a) Herói(na) de Algorithmia
 let Nome = "Merlyn";
 let classe = "Maga";
 let nivel = 20;
@@ -49,3 +50,48 @@ console.log(`⚡ Ataque Forte? ${ataqueForte}`);
 console.log(`🌟 Nível Avançado? ${nivelAvancado}`);
 console.log(`☠️ Pode Enfrentar o Guardião da Noite Eterna? ${podeEnfrentarGuardiao}`);
 console.log(`📊XP Atual:${xp} || Faltam  ${xpParaProximoNivel}  XP para próximo nível.`);
+
+//Nivel 2 - A Batalha dos algoritimos
+let nomePersonagem = "Merlyn";//Nome da heroína
+let CLASSE = "Maga";//Classe da heroina
+let vidaAtual = 100;//vida recuperada após os eventos
+let vidaMaxima = 300;
+let manaAtual = 105;
+let manaMaxima = 200;
+let NIVEL =  20;
+let experiencia = 84;
+let OURO = 160;
+
+let FORCA = 200;
+let defesa = 65;
+let agilidade = 250;
+let combatesVencidos = 1;
+
+let localAtual = "Nocturna"
+let missaoAtual = "Derrotar o Guardião da Noite Eterna, entidade que consome a sanidade."
+
+console.log("💉A canção dos Imortais");
+console.log("Na Cidade enfeitiçada de Nocturna, o tempo não flui... ele calcula.")
+console.log(`Merlyn, a ${CLASSE}, avança pekas ruínas da Cúpula Central de Códigos, o coração sombrio de Algorithmia`);
+console.log("O ar está carregado com loops infinitos e feitiços recursivos que distorcem a realidade.");
+console.log(`Sua vida atual é ${vidaAtual}/${vidaMaxima}, e sua mana pulsa em ${manaAtual}/${manaMaxima}, como um compilador prestes a explodir.`);
+console.log("Seu corpo carrega a memória do  combate anterior, mas sua mente está focada no próximo desafio: O Guardião da Noite Eterna.");
+console.log("");
+console.log("🏹 Estatíticas Atuais:");
+console.log(`🧠 Força de Ataque: ${FORCA}`);
+console.log(`🛡️Defesa Total : ${defesa}`);
+console.log(`👟 Agilidade: ${agilidade}`);
+console.log(`🏆 ${combatesVencidos}`);
+console.log(`🎯 Missão Atual: ${missaoAtual}`);
+console.log("");
+
+console.log("🌑 Algo se agita nas sombras... Os dados estão lançados.");
+console.log("Merlyn ergue a Estaca de Belmont, agora envolta em um brilho único, como se linhas de código mágico a envolvessem.");
+console.log("Sua aramadura Samgue Sombrio canta em reposta, absorvendo a escuridão ao redor como uma função devorando argumentos");
+console.log("");
+
+console.log("🔮 Um aviso ecoa nos céus corrompidos de Nocturna:");
+console.log("🗝️ Para vecer o Guardião, você deverá resolver o Algoritmo de Sangue, a equação que separa vivos e mortos.");
+console.log("⚙️ O ambiente muda, agora, Merlyn está em uma arena de lógica pura.");
+console.log("Os pilares da realidade vibra em 0 e 1. O Guardião surge: metade sombra, metade loop infinito.");
+console.log("");
