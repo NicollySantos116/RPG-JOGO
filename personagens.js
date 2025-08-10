@@ -206,8 +206,11 @@ console.log("💀 Mas a magia verdadeira jamais morre. Há sempre um novo ciclo.
 let Personagem = "Merlyn";
 console.log("");
 console.log("🦇 O Banquete Final da Noite Sem Fim");
-console.log(`Após vencer as provações anteriores, ${Personagem} chega diante do portão`);
-console.log("Lá dentro, corredores infinitos guardam inimigos, tesouros e segredos");
+console.log(`Após vencer as provações anteriores, ${Personagem} chega diante do portão, onde o ar se torna denso e pesado, carregado de mistérios não revelados.`);
+console.log("Lá dentro, corredores infinitos guardam inimigos, tesouros e segredos ancestrais que sussuram através das paredes feitas de pedra e sombra.");
+console.log("Cada passo ecoa como um código antigo, e a magia pulsante do castelo parece responder à sua presença, testando sua coragem e astúcia.");
+console.log("O silêncio é cortado apenas pelo som distante de asas e o tilintar de correntes, um aviso sombrio do que está por vir.");
+console.log("Mas Merlyn não hesita, pois sabe que apenas ao desvendar os enigmas  ocultos poderá alcançar o poder que busca para derrotar o Guardião da Noite Eterna.")
 console.log("");
 
 // Inventário inicial
