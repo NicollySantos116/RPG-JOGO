@@ -199,3 +199,124 @@ if (vidaAtual > 0) {
 console.log(`☠️ ${nomePersonagem} caiu em combate, A cidade de Nocturna mergulha em um silêncio sepulcral...`);
 console.log("💀 Mas a magia verdadeira jamais morre. Há sempre um novo ciclo.");
 }
+
+//🦇 O Banquete Final da Noite Sem Fim
+// Continuação do RPG de Merlyn - Nível 3: O Castelo dos Arrays
+
+let Personagem = "Merlyn";
+console.log("");
+console.log("🦇 O Banquete Final da Noite Sem Fim");
+console.log(`Após vencer as provações anteriores, ${Personagem} chega diante do portão`);
+console.log("Lá dentro, corredores infinitos guardam inimigos, tesouros e segredos");
+console.log("");
+
+// Inventário inicial
+let inventario = ["Estaca de Belmont", "Poção de Sangue","Sangue Sombrio"];
+// Adicionando item encontrado no Castelo
+inventario.push("Rosa Negra de Ébano");
+
+// Lista de inimigos do Castelo
+let inimigos = [
+
+"Gárgula Sanguinária de Nocturna",
+
+"Cavaleiro Vampiro de Eclipse",
+
+"Dama Pálida do Crepúsculo",
+
+"Morcegos da Penumbra"
+
+];
+
+// Lista de Aliados do Castelo
+let aliados = [ 
+    "Dayse, a Arqueira",
+
+     "Max, o Guerreiro"
+    
+    ];
+
+
+// Salas do Castelo
+let salas = [
+
+"Salão dos Espelhos Partidos",
+
+"Biblioteca Proibida",
+
+"Salão do Banquete",
+
+"Câmara do trono"
+
+];
+
+// Tesouros que Merlyn pode encontrar
+let tesouros = [
+
+    "Anel Carmesim",
+
+    "Tomo Proibido",
+
+    "Chave Dourada",
+
+    "Cálice de Sangue Eterno"
+
+];
+
+// Possíveis frases de vitória
+let frasesVitoria= [
+
+    "crava a estaca e ouve o último grito ecoar pela eternidade.",
+
+    "invoca chamas rubras que consomem seu inimigo até virar cinzas.",
+
+    "sorri friamente enquanto a sombra do adversário se dissolve.",
+
+    "liberta uma rajada de magia ancestral que despedaça a criatura.",
+
+    "entoa um feitiço proibido que sela a lama do inimigo para sempre."
+
+];
+
+console.log("");
+//Antes de entrar no castelo, Merlyn decide usar uma poção para se fortalecer
+console.log("🧪 Merlyn usa uma Poção do inventário para se fortalecer... ");
+
+// Remove o último item do inventário (simulando que usou a poção)
+let itemUsado = inventario.pop();
+console.log(`🌟 Item usado: ${itemUsado}`);
+console.log(`🧳 Inventário restante:  ${inventario.join(", ")}`); 
+
+// Mostra os aliados de Merlyn
+console.log("🪖 Aliados que acompanham Merlyn: ");
+for (let aliado of aliados) {
+    console.log(`${aliado}`);
+}
+console.log("");
+
+// Percorrendo as salas
+for (let i = 0; i< salas.length; i++){
+    console.log(`🏰 Merlyn entra na sala: ${salas[i]}`);
+
+    // Encontra o inimigo da sala
+    console.log(`⚔️ Inimigos à vista: ${inimigos[i]}`);
+
+    // Escolhe aleatoriamente frase de vitória 
+    let fraseAleatoria = frasesVitoria[Math.floor(Math.random() * frasesVitoria.length)];
+    console.log(`🩸 Merlyn usa ${inventario[0]} e  ${fraseAleatoria}`);
+
+    // Simula  a batalha
+    console.log(`Merlyn usa ${inventario[0]} e derrota ${inimigos[i]}`);
+
+    // Chance de encontrar o tesouro (execeto na última sala)
+    if(i < salas.length - 1 ){
+        let tesouroEncontrado = tesouros[i % tesouros.length];
+        console.log(`💎 Tesouro encontrado: ${tesouroEncontrado}`);
+        inventario.push(tesouroEncontrado);
+    }
+
+}
+
+// Inventário final
+console.log("📜 Inventário final de Merlyn ");
+console.log(inventario);
